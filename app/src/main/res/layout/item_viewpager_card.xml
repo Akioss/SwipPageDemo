@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/big_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:transitionName="big_layout">
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:transitionName="show_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"
+                android:textColor="#161616"
+                android:textSize="26sp"
+                android:text="BAROLO"
+                />
+
+            <TextView
+                android:id="@+id/desc_tv"
+                android:transitionName="show_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:text="BAROLO DI CASTIGLION FALLETTO"
+                />
+
+            <ImageView
+                android:id="@+id/show_iv"
+                android:transitionName="show_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/bottle_1"
+                />
+
+            <TextView
+                android:id="@+id/show_price_tv"
+                android:transitionName="show_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:text="$550.0"/>
+
+            <View
+                android:id="@+id/line_view"
+                android:transitionName="show_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                android:background="#e3e3e3"/>
+
+            <Button
+                android:id="@+id/show_buy_btn"
+                android:transitionName="show_buy"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/common_btn_style"
+                android:text="BUY NOW"
+                android:textColor="#FFBD66"
+                android:textSize="18sp"
+                android:elevation="10dp"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
